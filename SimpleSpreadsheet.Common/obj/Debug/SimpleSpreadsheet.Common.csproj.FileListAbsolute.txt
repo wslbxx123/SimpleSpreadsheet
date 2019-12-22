@@ -1,0 +1,6 @@
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.Common\bin\Debug\SimpleSpreadsheet.Common.dll
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.Common\bin\Debug\SimpleSpreadsheet.Common.pdb
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.Common\obj\Debug\SimpleSpreadsheet.Common.csproj.CoreCompileInputs.cache
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.Common\obj\Debug\SimpleSpreadsheet.Common.dll
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.Common\obj\Debug\SimpleSpreadsheet.Common.pdb
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.Common\obj\Debug\SimpleSpreadsheet.Common.csprojAssemblyReference.cache

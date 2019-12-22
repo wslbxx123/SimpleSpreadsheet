@@ -1,0 +1,9 @@
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.DataAccess\obj\Debug\SimpleSpreadsheet.DataAccess.csprojAssemblyReference.cache
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.DataAccess\obj\Debug\SimpleSpreadsheet.DataAccess.csproj.CoreCompileInputs.cache
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.DataAccess\bin\Debug\SimpleSpreadsheet.DataAccess.dll
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.DataAccess\bin\Debug\SimpleSpreadsheet.DataAccess.pdb
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.DataAccess\bin\Debug\SimpleSpreadsheet.Common.dll
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.DataAccess\bin\Debug\SimpleSpreadsheet.Common.pdb
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.DataAccess\obj\Debug\SimpleSpreadsheet.DataAccess.csproj.CopyComplete
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.DataAccess\obj\Debug\SimpleSpreadsheet.DataAccess.dll
+D:\Workspace\SimpleSpreadsheet\SimpleSpreadsheet.DataAccess\obj\Debug\SimpleSpreadsheet.DataAccess.pdb
