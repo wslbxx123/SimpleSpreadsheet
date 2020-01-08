@@ -12,7 +12,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_UpdateCell_OutOfBound()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(10, 10);
+            excelService.CreateExcel(10, 10, 1);
 
             excelService.UpdateCell(11, 1, 5);
         }
@@ -22,7 +22,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_UpdateCell_ValueLengthFour_Throw()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(10, 10);
+            excelService.CreateExcel(10, 10, 1);
 
             excelService.UpdateCell(1, 1, 2567);
         }
@@ -31,7 +31,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_UpdateCell_Success()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(10, 10);
+            excelService.CreateExcel(10, 10, 1);
             excelService.UpdateCell(1, 1, "5");
 
             var actual = excelService.GetCell(1, 1).Value;
@@ -44,7 +44,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_ExcelExists_True()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(10, 10);
+            excelService.CreateExcel(10, 10, 1);
 
             var actual = excelService.ExcelExists();
 
@@ -64,7 +64,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_GetCell_Success()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(10, 10);
+            excelService.CreateExcel(10, 10, 1);
             excelService.UpdateCell(5, 5, 10);
 
             var actual = excelService.GetCell(5, 5);
@@ -76,7 +76,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_RemoveCell_Success()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(10, 10);
+            excelService.CreateExcel(10, 10, 1);
             excelService.UpdateCell(5, 5, 10);
 
             excelService.RemoveCell(5, 5);
@@ -89,7 +89,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_HasValue_True()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(10, 10);
+            excelService.CreateExcel(10, 10, 1);
             excelService.UpdateCell(5, 5, 10);
 
             var actual = excelService.HasValue(5, 5);
@@ -100,7 +100,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_HasValue_False()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(10, 10);
+            excelService.CreateExcel(10, 10, 1);
 
             var actual = excelService.HasValue(5, 5);
 
@@ -111,7 +111,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_SumCells_Success()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(10, 10);
+            excelService.CreateExcel(10, 10, 1);
             excelService.UpdateCell(1, 1, 5);
             excelService.UpdateCell(1, 2, 5);
 
@@ -125,7 +125,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_UpdateCellsByLine_Success()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(20, 4);
+            excelService.CreateExcel(20, 4, 1);
 
             excelService.UpdateCellsByLine(1, 2, 6, 2);
 
@@ -141,7 +141,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_UpdateCellsBySquare_Success()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(20, 4);
+            excelService.CreateExcel(20, 4, 1);
 
             excelService.UpdateCellsBySquare(14, 1, 18, 3);
 
@@ -163,7 +163,7 @@ namespace SimpleSpreadsheet.UnitTest
         public void Test_UpdateCellsByBucket_Success()
         {
             var excelService = new ExcelService();
-            excelService.CreateExcel(20, 4);
+            excelService.CreateExcel(20, 4, 1);
             excelService.UpdateCellsBySquare(14, 1, 18, 3);
             excelService.UpdateCellsByBucket(15, 2, "o");
 

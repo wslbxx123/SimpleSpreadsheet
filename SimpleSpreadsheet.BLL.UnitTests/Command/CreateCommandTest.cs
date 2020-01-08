@@ -17,17 +17,17 @@ namespace SimpleSpreadsheet.BLL.UnitTests.Command
             var command = new CreateCommand(excelService);
             command.Execute(new string[] { "C", "20", "4" });
 
-            A.CallTo(() => excelService.CreateExcel(20, 4)).MustHaveHappenedOnceExactly();
+            A.CallTo(() => excelService.CreateExcel(20, 4, 1)).MustHaveHappenedOnceExactly();
         }
 
         [TestMethod]
         [ExpectedException(typeof(InvalidValueException))]
-        public void Test_CreateExcel_FourParameters_InvalidValueException()
+        public void Test_CreateExcel_FiveParameters_InvalidValueException()
         {
             var excelService = A.Fake<IExcelService>();
 
             var command = new CreateCommand(excelService);
-            command.Execute(new string[] { "C", "20", "4", "5" });
+            command.Execute(new string[] { "C", "20", "4", "5", "1" });
         }
 
         [TestMethod]
